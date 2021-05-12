@@ -16,7 +16,7 @@ const searchAlgoliaPlaces = (event) => {
     .then(response => response.json())
     .then((data) => {
       console.log(data);
-      const cityName = data.hits[0].locale_names.default[0]
+      const cityName = data.hits[0].locale_names.default[0];
       const results = document.getElementById('results');
       results.innerText = cityName;
     });
